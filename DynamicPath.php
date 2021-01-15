@@ -7,8 +7,8 @@ $numberOfPath = 5;
 function parseInput($basePath, $numberOfPath) {
     for ($i=0; $i < $numberOfPath; $i++) { 
         $randomSite = $basePath . hash('adler32', $i);
-        $new_array = array($randomSite);
-          
+        $new_array = array($randomSite  . ".txt");
+
         var_dump(parseOutput($new_array));
     }
 }
